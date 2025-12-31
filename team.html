@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Team — FJOSTE Group</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="img/logo.png" alt="FJOSTE Logo" class="logo site-logo">
+      </a>
+      <div class="site-title">FJOSTE Group</div>
+      <button class="nav-toggle" aria-label="Menü umschalten">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html" class="btn ghost team-btn">Home</a>
+        <a href="gallery.html" class="btn ghost team-btn">Galerie</a>
+        <a href="https://truckersmp.com/vtc/85133" class="btn ghost team-btn">TruckersMP</a>
+        <a href="https://vtlog.net/vtc/8136" class="btn ghost team-btn">VTLog</a>
+        <a href="https://dsc.gg/fjoste" class="btn ghost team-btn">Discord</a>
+        <a href="#" class="btn ghost team-btn">Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero team-hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <h1>Unser Team</h1>
+      <section id="team-list" class="team-grid" aria-live="polite">
+        <!-- Member cards erscheinen hier -->
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container"><small>&copy; 2025 Fjoste Group</small></div></footer>
+  <script src="team.js" defer></script>
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.nav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FJOSTE Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#">
+                <img src="img/logo.png" alt="FJOSTE Logo" class="logo site-logo">
+            </a>
+            <div class="site-title">FJOSTE Group</div>
+            <button class="nav-toggle" aria-label="Menü umschalten">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav class="nav">
+                <a href="#" class="btn ghost team-btn">Home</a>
+                <a href="gallery.html" class="btn ghost team-btn">Galerie</a>
+                <a href="https://truckersmp.com/vtc/85133" class="btn ghost team-btn">TruckersMP</a>
+                <a href="https://vtlog.net/vtc/8136" class="btn ghost team-btn">VTLog</a>
+                <a href="https://dsc.gg/fjoste" class="btn ghost team-btn">Discord</a>
+                <a href="team.html" class="btn ghost team-btn">Team</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="hero home-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <section class="hero-intro card">
+                <h2>🚛 Über die FJOSTE Group</h2>
+                <p>Willkommen bei der FJOSTE Group, Deiner virtuellen Spedition auf TruckersMP, in der Leidenschaft auf Professionalität trifft.</p>
+                <p>Seit unserer Gründung stehen wir für mehr als nur den Transport von A nach B: Wir sind eine eng verbundene Community, die den Spaß am virtuellen Trucking in den Vordergrund stellt. Egal, ob Du mit ETS2 oder ATS unterwegs bist – bei uns findest Du Gleichgesinnte.</p>
+                <h3>Was uns auszeichnet:</h3>
+                <p><strong>Familiärer Zusammenhalt:</strong> Bei uns bist Du keine Nummer, sondern ein geschätztes Mitglied. Wir legen Wert auf einen freundlichen, respektvollen Umgang und gegenseitige Unterstützung.</p>
+                <p><strong>Organisierte Touren:</strong> Wir planen regelmäßige, spannende Konvois und Events, die durch eine professionelle Organisation glänzen, aber immer den Spaßfaktor im Blick behalten.</p>
+                <p><strong>Offenheit für alle:</strong> Vom erfahrenen Langstreckenprofi bis zum Neueinsteiger – wir freuen uns über jeden, der motiviert ist, die Straßen Europas mit uns zu erobern.</p>
+                <p>Suchst Du eine VTC, in der Du Deine Kilometer mit Witz, Engagement und Zuverlässigkeit sammelst? Dann bist Du bei der FJOSTE Group genau richtig!</p>
+                <p><strong>Werde Teil unserer Crew und lass uns gemeinsam die nächste Tour starten!</strong></p>
+            </section>
+            <section id="vtc-jobs" class="vtc-widget">
+                <header class="widget-head">
+                    <h2>Letzte gefahrene Aufträge</h2>
+                    <small class="widget-status">Lade...</small>
+                </header>
+                <div class="jobs-list" aria-live="polite">
+                    <!-- Jobs werden per JavaScript eingefügt -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>&copy; 2025 Fjoste Group. Alle Rechte vorbehalten.</small>
+        </div>
+    </footer>
+    <script src="vtc-widget.js" defer></script>
+    <script>
+      document.querySelector('.nav-toggle').addEventListener('click', () => {
+        document.querySelector('.nav').classList.toggle('open');
+      });
+    </script>
+</body>
+</html>
