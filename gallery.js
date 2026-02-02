@@ -4,7 +4,7 @@
 // { file: 'img/galerie/truck1.jpg', caption: 'Bei Sonnenuntergang' }
 
 const GALLERY_IMAGES = [
-  { file: 'img/galerie/eut2_hq_69333f3c.png', caption: 'Das ist ein Test' },
+  { file: 'img/galerie/eut2_hq_69333f3c.png', caption: '' },
   { file: 'img/galerie/eut2_hq_6934202b.png', caption: '' },
   { file: 'img/galerie/eut2_hq_69345798.png', caption: '' },
   { file: 'img/galerie/eut2_hq_694869e1.png', caption: '' },
@@ -65,4 +65,5 @@ document.addEventListener('DOMContentLoaded', ()=> {
   };
 
   renderGallery();
+
 });
